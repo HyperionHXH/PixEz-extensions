@@ -126,11 +126,14 @@ jobs:
         with:
           pattern: extension-release-*
           path: release-bundles
+          merge-multiple: false
 
       - name: Verify release bundles
         shell: bash
         run: |
-          for bundle in release-bundles/extension-release-*; do
+          mapfile -t bundles < <(find release-bundles -type f -name sha256sums.txt -printf '%h\n' | sort)
+          test "${#bundles[@]}" -gt 0 || { echo "No downloaded release bundles found"; find release-bundles -maxdepth 3 -print; exit 1; }
+          for bundle in "${bundles[@]}"; do
             (cd "$bundle" && sha256sum -c sha256sums.txt)
           done
 
@@ -139,7 +142,8 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         shell: bash
         run: |
-          for bundle in release-bundles/extension-release-*; do
+          mapfile -t bundles < <(find release-bundles -type f -name sha256sums.txt -printf '%h\n' | sort)
+          for bundle in "${bundles[@]}"; do
             TAG=$(cat "$bundle/tag.txt")
             TITLE=$(cat "$bundle/title.txt")
             APK=$(find "$bundle" -maxdepth 1 -name '*.apk' -print -quit)
