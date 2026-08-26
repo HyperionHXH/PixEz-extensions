@@ -1,0 +1,57 @@
+{
+  "name": "E-extensions",
+  "badgeLabel": "E-EXT",
+  "signingKey": "5e2798343112e43ddc68c43369f84ac5f2411caf7eb55e52035a766025eab970",
+  "contact": {
+    "website": "https://github.com/HyperionHXH/E-extensions"
+  },
+  "extensionList": {
+    "extensions": [
+      {
+        "name": "PixEz",
+        "packageName": "eu.kanade.tachiyomi.extension.all.pixez",
+        "resources": {
+          "apkUrl": "https://github.com/HyperionHXH/PixEz-extensions/releases/download/pixez-v1.6.3/tachiyomi-all.pixez-v1.6.3.apk",
+          "iconUrl": "https://raw.githubusercontent.com/HyperionHXH/PixEz-extensions/main/src/all/pixez/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://github.com/HyperionHXH/PixEz-extensions/releases/download/pixez-v1.6.3/tachiyomi-all.pixez-v1.6.3.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "3",
+        "versionName": "1.6.3",
+        "contentWarning": "CONTENT_WARNING_MIXED",
+        "sources": [
+          {
+            "id": "8079946848774935298",
+            "name": "PixEz",
+            "language": "en",
+            "homeUrl": "https://www.pixiv.net"
+          },
+          {
+            "id": "7869648121758783180",
+            "name": "PixEz",
+            "language": "ja",
+            "homeUrl": "https://www.pixiv.net"
+          },
+          {
+            "id": "7445752428388608191",
+            "name": "PixEz",
+            "language": "zh",
+            "homeUrl": "https://www.pixiv.net"
+          },
+          {
+            "id": "1603413103156091763",
+            "name": "PixEz",
+            "language": "zh-tw",
+            "homeUrl": "https://www.pixiv.net"
+          },
+          {
+            "id": "5119215398075261154",
+            "name": "PixEz",
+            "language": "ko",
+            "homeUrl": "https://www.pixiv.net"
+          }
+        ]
+      }
+    ]
+  }
+}
