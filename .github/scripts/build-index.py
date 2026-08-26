@@ -71,10 +71,10 @@ def main() -> None:
         "sources": sources,
     }
     modern_index = {
-        "name": "E-extensions",
-        "badgeLabel": "E-EXT",
+        "name": "PixEz-extensions",
+        "badgeLabel": "PIXEZ",
         "signingKey": signing_key,
-        "contact": {"website": "https://github.com/HyperionHXH/E-extensions"},
+        "contact": {"website": "https://github.com/HyperionHXH/PixEz-extensions"},
         "extensionList": {"extensions": [extension]},
     }
 
