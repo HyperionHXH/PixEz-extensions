@@ -1,0 +1,16 @@
+.gradle/
+.kotlin/
+build/
+**/build/
+local.properties
+*.iml
+.idea/
+signingkey.jks
+/*.apk
+/*.jar
+/upstream/
+/src/*/*/
+!/src/all/pixez/
+/lib/*/
+!/lib/unpacker/
+/lib-multisrc/
