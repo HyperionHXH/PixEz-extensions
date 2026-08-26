@@ -1,9 +1,9 @@
 {
-  "name": "E-extensions",
-  "badgeLabel": "E-EXT",
+  "name": "PixEz-extensions",
+  "badgeLabel": "PIXEZ",
   "signingKey": "5e2798343112e43ddc68c43369f84ac5f2411caf7eb55e52035a766025eab970",
   "contact": {
-    "website": "https://github.com/HyperionHXH/E-extensions"
+    "website": "https://github.com/HyperionHXH/PixEz-extensions"
   },
   "extensionList": {
     "extensions": [
